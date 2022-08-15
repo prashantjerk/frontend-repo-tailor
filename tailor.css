@@ -191,7 +191,37 @@ img{
     font-weight: bold;
 }
 
+.cartBtn
+{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 240px;
+    padding: 5px 10px 5px 25px;
+    background-color: #123845;
+    color: #fff;
+    font-family: poppins;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    transition: all ease;
+    transition-delay: 0.2s;
+}
+.cartBtn:hover
+{
+    border-bottom: 2px white solid;
+    transition:  all ease;
+    transition-delay: 0.2s;
+}
 
+svg
+{
+    position: relative;
+    top: 5px;
+    left: -20px;
+    height: 25px;
+    width: 20%;
+    fill: white;
+}
 
 .price
 {
@@ -214,3 +244,4 @@ img{
     font-weight: 100;
     text-align: left;
 }
+
