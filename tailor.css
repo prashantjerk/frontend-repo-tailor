@@ -46,6 +46,13 @@
     font-size: 2.4rem;
     user-select: none;
 }
+#navbar__logo::after
+{
+    content: "apple";
+    color: #75863b;
+    font-size: 0.5em;
+    margin-top: 15px;
+}
 .search
 {
     position: absolute;
@@ -131,25 +138,24 @@
 .grid-card{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    margin: 10px 15px 0 15px;    
     gap: 1rem;
+    margin: 10px 15px 0 15px;
 }
 .card{
     background: #1d2528;
-    height: max-content;
-    gap: 3rem;
+    height: 350px;
     border-radius: 8px;
 }
 p{
     position: absolute;
     margin: 10px 0 0 20px;
-    font-family: Montserrat;
+    font-family: poppins;
     font-size: 1.2rem;
     color: #d0cdb3;
 }
 img{
-    width: 150px;
-    height: 130px;
+    width: 200px;
+    height: 150px;
     margin:  0 auto;
     object-fit: cover;
     cursor: pointer;
@@ -159,37 +165,52 @@ img{
 .images{
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(170px, auto) );
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    margin-left: 10px;
     gap: 4rem;
     overflow: hidden;
     padding-bottom: 20px;
+    position: absolute;
 }
-img:nth-child(1)
+
+#sandalImg
 {
     object-fit: cover;
-    object-position: 0ch -8ch;
+    object-position: 0ch -14ch;
 
 }
 
-img:nth-child(2)
-{
-    object-fit: cover;
-    object-position: 0ch -10ch;
-
+.productName{
+    position: relative;
+    top: -70px;
+    left: -11px ;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: poppins;
+    font-weight: bold;
 }
 
-Img::after
+
+
+.price
 {
-    content: "Sandal";
-    color: red;
-    z-index: 100;
-    font-size: 20px;
+    position: relative;
+    top: -149px;
+    left: -11px;
+    color: #fff;
+    font-size: 1em;
+    font-style:oblique;
+    font-weight: lighter;
 }
-#navbar__logo::after
+
+.productDescription
 {
-    content: "apple";
-    color: #75863b;
-    font-size: 0.5em;
-    margin-top: 15px;
+    position: relative;
+    top: 220px;
+    left: 0;
+    color: #c6cbcb;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
 }
