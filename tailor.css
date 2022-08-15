@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 *{
     box-sizing: border-box;
     margin: 0;
@@ -61,13 +62,14 @@
 }
 
 .searchBtn{
-    width: 200%;
+    width: 160%;
     height: 10px;
     padding: 25px;
-    border: 2px #c29a5c solid;
+    border: 2px #fff solid; /*previous: c29a5c*/
     box-shadow: none;
     border-radius: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
     font-size: 1.1rem;
     background-color: #1d2528;
 }
@@ -196,24 +198,25 @@ img{
     position: absolute;
     margin-top: 60px;
     margin-left: 240px;
-    padding: 5px 10px 5px 25px;
+    width: 160px;
+    padding: 4px 10px 4px 25px;
     background-color: #123845;
     color: #fff;
     font-family: poppins;
     font-size: 1em;
     border-radius: 5px;
     border: none;
-    transition: all ease;
-    transition-delay: 0.2s;
+    transition: 0.4s all ease-out;
 }
 .cartBtn:hover
 {
-    border-bottom: 2px white solid;
-    transition:  all ease;
-    transition-delay: 0.2s;
+    transition:  0.4s all ease-in-out;
+    margin-left: 230px;
+    width: 180px;
+    cursor: pointer;
 }
 
-svg
+.cartIcon
 {
     position: relative;
     top: 5px;
@@ -221,6 +224,32 @@ svg
     height: 25px;
     width: 20%;
     fill: white;
+}
+
+.detailBtn
+{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 240px;
+    width: 160px;
+    height: 31.4167;
+    padding: 7px 0;
+    background-color: #123845;
+    color: #fff;
+    font-family: poppins;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s all ease-out;
+
+}
+.detailBtn:hover
+{
+    transition:  0.4s all ease-out;
+    margin-left: 235px;
+    width: 170px;
+    border: 1px #d0cdb3 solid;
+    cursor: pointer;
 }
 
 .price
