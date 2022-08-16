@@ -103,7 +103,7 @@
     width: 100%;
 }
 
-.button {
+#signup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@
     transition: all 0.3s ease;
 }
 
-.button:hover{
+#signup:hover{
     background-color: #b68439;
     box-shadow: 3px 2px 2px #323407;
     transition: all 0.3s ease;
@@ -306,7 +306,7 @@ img{
     border-radius: 50%;
     object-fit: cover;
     padding: 10px 10px;
-    filter: drop-shadow(7px 0px 6px #1d2528);
+    filter: drop-shadow(4px 0px 8px #1d2528);
     user-select: none;
     margin-bottom: 10px;
     transition: 0.2s all ease-out;
@@ -350,6 +350,67 @@ img{
 {
     transition: 0.2s all ease-out;
     color: #fff;
+}
+
+.instaCard
+{
+    width: 50%;
+    height: 230px;
+    border: 2px #123845 solid;
+    border-radius: 10px;
+    margin: auto auto 80px auto;
+    display: flex;
+    background: #1d2528;
+
+}
+.instaIcon
+{
+    height: 120px;
+    margin-top: 40px;
+    margin-left: 30px;
+    fill: #fff;
+    /* background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);; */
+}
+
+.instaFollow
+{
+    font-size: 3em;
+    color: #fff;
+    font-family: montserrat;
+    text-transform: uppercase;
+    display: block;
+    margin: 40px;
+}
+
+#instafollowDescription
+{
+    font-stretch: extra-expanded;
+    content: "Explore the latest trends";
+    width: 300px;
+    font-size: 0.4em;
+    color: #fff;
+    position: absolute;
+    text-transform: capitalize;
+    font-family: poppins ;
+    margin: -70x auto auto 320px;
+}
+
+#followBtn
+{
+    height: 50px;
+    width: 210px;
+    border-radius: 3px;
+    font-family: poppins;
+    color: #1d2528;
+    background: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    margin: 75px 30px auto auto;
+    text-transform: uppercase;
 }
 
 /* 75863b */
