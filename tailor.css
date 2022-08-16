@@ -148,7 +148,8 @@
     height: 350px;
     border-radius: 8px;
 }
-p{
+.productDescription, .productName, .price
+{
     position: absolute;
     margin: 10px 0 0 20px;
     font-family: poppins;
@@ -354,8 +355,9 @@ img{
 
 .instaCard
 {
-    width: 50%;
-    height: 230px;
+    min-width: 766px;
+    max-width: 50%;
+    max-height: 230px;
     border: 2px #123845 solid;
     border-radius: 10px;
     margin: auto auto 80px auto;
@@ -365,7 +367,9 @@ img{
 }
 .instaIcon
 {
-    height: 120px;
+    min-height: 70px;
+    min-width: 70px;
+    height: 100px;
     margin-top: 40px;
     margin-left: 30px;
     fill: #fff;
@@ -398,8 +402,8 @@ img{
 
 #followBtn
 {
-    height: 50px;
-    width: 210px;
+    height: max-content;
+    min-width: 150px ;
     border-radius: 3px;
     font-family: poppins;
     color: #1d2528;
@@ -409,8 +413,61 @@ img{
     font-weight: 900;
     text-align: center;
     align-items: center;
+    vertical-align: center;
     margin: 75px 30px auto auto;
     text-transform: uppercase;
+    overflow: hidden;
+}
+
+footer
+{
+    width: 100%;
+    height: 400px;
+    border: 2px red solid;
+    margin: auto 0 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 25px ;
+}
+
+#aboutTailor, #quicklinks__block
+{
+    width: 300px;
+    height: max-content;
+    border: 2px blue solid;
+    margin-top: 10px ;
+}
+
+.footerTitle
+{
+    font-family: poppins;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.footerTitle
+{
+}
+
+#aboutDescription
+{
+    font-size: 1em;
+    font-family: montserrat;
+    line-height: 1.5;
+    
+}
+
+.quick__links
+{
+    text-decoration: none;
+    list-style:none;
+    margin-top: 0px;
+}
+
+.quicklinks__anchor
+{
+    font-family: poppins;
+    color: #000;
 }
 
 /* 75863b */
