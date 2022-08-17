@@ -61,8 +61,8 @@
     margin-left: 20%;
 }
 
-.searchBtn{
-    width: 160%;
+.searchField{
+    min-width: 600px;
     height: 10px;
     padding: 25px;
     border: 2px #fff solid; /*previous: c29a5c*/
@@ -84,7 +84,7 @@
 }
 
 .navbar__links {
-    color: #f2c8bc;
+    color: #fff;
     display: flex;
     font-size: 1.1rem;
     align-items: center;
@@ -422,18 +422,55 @@ img{
 footer
 {
     width: 100%;
-    height: 400px;
-    border: 2px red solid;
+    height: 700px;
+    background-color: #d0cdb3;
+    /* background-color: #484852; */
+    /* border-top: 2px #1d2528 solid; */
+    border-radius: 8px 8px 0 0;
     margin: auto 0 30px 0;
-    display: flex;
     justify-content: space-evenly;
     column-gap: 25px ;
+}
+
+.footerrow
+{
+    display: flex;
+    align-self: center;
+    align-items:initial;
+    justify-content: space-evenly;
+    column-gap: 3em;
+    margin: 5px auto auto auto;
+    padding: 30px 10px;
+    min-width: 600px;
+    width: fit-content;
+    height: fit-content;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1d2528;
+    width: 800px;
+    height: 1px;
+    opacity: 0.7;
+    
+}
+.footerrow2
+{
+    width: 1200px;
+    justify-content: center;
+    height: fit-content;
+    min-height: 100px;
+
 }
 
 #abouttailor__block, #quicklinks__block, #others__block, #subscribe__block
 {
     height: fit-content;
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
     margin-top: 10px ;
 }
 
@@ -460,6 +497,8 @@ footer
     font-family: poppins;
     font-size: 1.5em;
     text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2px;
 }
 
 
@@ -468,6 +507,7 @@ footer
     font-size: 1em;
     font-family: montserrat;
     line-height: 1.5;
+    font-weight: 100;
     
 }
 
@@ -485,21 +525,6 @@ footer
 }
 
 
-.row1
-{
-    display: flex;
-    align-self: center;
-    align-items:initial;
-    justify-content: space-evenly;
-    column-gap: 1em;
-    border: 2px black solid;
-    margin: 5px auto auto auto;
-    padding: 30px 10px;
-    min-width: 600px;
-    height: fit-content;
-    min-height: 300px;
-}
-
 #subscribe__input, #subscribeBtn
 {
     height: 50px;
@@ -513,9 +538,11 @@ footer
 #subscribe__input
 {
     padding-left: 10px;
-    min-width: 100px;
     width: 300px;
+    min-width: 100px;
+    color: #000;
     transition: 0.2s all ease-in-out; 
+    font-weight: bolder;
 }
 #subscribe__input:hover
 {
@@ -525,11 +552,11 @@ footer
 
 #subscribeBtn
 {
+    transition: 0.2s all ease-in-out;
     background-color: #1d2528;
     color: #fff;
-    min-width: 100px;
     width: 300px;
-    transition: 0.2s all ease-in-out;
+    min-width: 100px;
 }
 
 #subscribeBtn:hover
@@ -539,7 +566,20 @@ footer
     box-shadow: 0 0 10px #123845;
 }
 
+.icons
+{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    column-gap: 1em;
+    fill: #123845;
+    align-items: center;
+}
 
+.connect
+{
+    align-self: center;
+}
 /* 75863b */
     /* .categoryImg:nth-child(2)
     {
