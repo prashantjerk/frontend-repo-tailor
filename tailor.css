@@ -430,14 +430,31 @@ footer
     column-gap: 25px ;
 }
 
-#aboutTailor, #quicklinks__block
+#abouttailor__block, #quicklinks__block, #others__block, #subscribe__block
 {
-    width: 300px;
-    height: max-content;
+    height: fit-content;
     border: 2px blue solid;
     margin-top: 10px ;
 }
 
+#abouttailor__block
+{
+    max-height: 330px;
+    min-width: 240px;
+    width: 300px;
+}
+#quicklinks__block, #others__block
+{
+    min-width: 100px;
+
+}
+
+#subscribe__block
+{
+    display: block;
+    min-width: 100px;
+    width: fit-content;
+}
 .footerTitle
 {
     font-family: poppins;
@@ -445,9 +462,6 @@ footer
     text-transform: uppercase;
 }
 
-.footerTitle
-{
-}
 
 #aboutDescription
 {
@@ -457,18 +471,74 @@ footer
     
 }
 
-.quick__links
+.quick__links, .other__links
 {
     text-decoration: none;
     list-style:none;
     margin-top: 0px;
 }
 
-.quicklinks__anchor
+.quicklinks__anchor, .otherlinks__anchor
 {
     font-family: poppins;
     color: #000;
 }
+
+
+.row1
+{
+    display: flex;
+    align-self: center;
+    align-items:initial;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    border: 2px black solid;
+    margin: 5px auto auto auto;
+    padding: 30px 10px;
+    min-width: 600px;
+    height: fit-content;
+    min-height: 300px;
+}
+
+#subscribe__input, #subscribeBtn
+{
+    height: 50px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: poppins;
+    border: 1.5px #1d2528 solid;
+    border-radius: 4px;
+}
+
+#subscribe__input
+{
+    padding-left: 10px;
+    min-width: 100px;
+    width: 300px;
+    transition: 0.2s all ease-in-out; 
+}
+#subscribe__input:hover
+{
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 0 5px #123845;
+}
+
+#subscribeBtn
+{
+    background-color: #1d2528;
+    color: #fff;
+    min-width: 100px;
+    width: 300px;
+    transition: 0.2s all ease-in-out;
+}
+
+#subscribeBtn:hover
+{
+    background-color: #123845;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 0 10px #123845;
+}
+
 
 /* 75863b */
     /* .categoryImg:nth-child(2)
