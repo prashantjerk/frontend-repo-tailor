@@ -572,7 +572,7 @@ hr{
     width: 200px;
     display: flex;
     column-gap: 1em;
-    fill: #123845;
+    fill: #1d2528;
     align-items: center;
 }
 
@@ -580,6 +580,7 @@ hr{
 {
     align-self: center;
 }
+
 /* 75863b */
     /* .categoryImg:nth-child(2)
     {
