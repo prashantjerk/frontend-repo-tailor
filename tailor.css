@@ -592,14 +592,50 @@ hr{
 .winter_card{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
     overflow: hidden;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    
+    padding: 0;    
 }
 
 .winterImg{
-    height: 250px;
-    width: 200px;
+    height: 350px;
+    width: 1fr;
+    align-items: right;
+    object-fit: cover;
+    filter: drop-shadow(4px 0px 5px #1d2528);
+    padding: 10px 10px;
+    overflow: hidden;
+
+}
+
+#trouser #pant{
+    filter: none;
+
+}
+
+
+.winterImg:hover{
+    padding: 1px;
+    transition: 0.2s all ease-out;
+    filter: none;
+}
+
+.winterEach{
+    height: 440px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.2s all ease-out;
+    opacity: 99;
+    padding: 40px;
+}
+.winterEach:hover
+{
+    padding: auto;
+    height: 430px;
+    border-radius: 15px;
+    background: #123845;
+    border: 2px #1d2528 solid;
+    border-radius: 18px;
+    transition: 0.2s all ease-out;
 }
